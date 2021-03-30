@@ -2,15 +2,18 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-    width: 100vw;
-    height: 1284px;
+    width: 100%;
+    height: 797px;
     background-color: #f2f2f2;
+    @media(max-width: 800px) {
+       width: 362.1%;
+    }
 `
 
 export const TitlePage = styled.h1`
     width: 183px;
     height: 30px;
-    margin: 0 auto;
+    margin: 4% auto;
     font-size: 25px;
     font-weight: bold;
     font-stretch: normal;

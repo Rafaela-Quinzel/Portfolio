@@ -1,31 +1,37 @@
 import styled from "styled-components"
 
 export const MainContainer = styled.div`
-    width: 100vw;
+    width: 100%;
+    min-width:980px;
     height: 60px;
     padding: 19px 4px 16px 32px;
+    background-color: #33a6a6;
+    position: fixed;
+    margin: auto;
     @media (max-width: 800px) {
-        font-size: 1rem;
-        justify-content: center;
-    }
+        display: flex;
+        align-items: center;
+        height: 100px;
+    } 
 `
 
-export const Name = styled.span`
-    width: 75px;
-    height: 25px;
-    margin: 0 65rem 0 0;
+export const Name = styled.a`
+    margin: 0 35rem 0 0;
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.28px;
-    color: #8d1c31;
+    color: #ffffff;
+    text-decoration: none;
+    @media (max-width: 800px) {
+        font-size: 2.5rem;
+        margin: auto 40rem auto 0;
+    }
 `
 
 export const Anchor = styled.a`
-    width: 80px;
-    height: 19px;
     margin: 1rem;
     font-size: 16px;
     font-weight: normal;
@@ -34,6 +40,11 @@ export const Anchor = styled.a`
     line-height: normal;
     letter-spacing: -0.22px;
     text-align: center;
-    color: #8d1c31;
+    color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
+    @media (max-width: 800px) {
+        font-size: 1.5rem;
+        margin: 0 2rem 0 0;
+    }
 `

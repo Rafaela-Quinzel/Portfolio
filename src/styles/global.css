@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", "Rajdhani", sans-serif;  
+    font-family: "Inter", "Rajdhani", sans-serif; 
 }
 
 
@@ -19,7 +19,7 @@
 }
 
 
-body, button {
+body {
     font: 400 1rem "Inter", sans-serif;
 }
 

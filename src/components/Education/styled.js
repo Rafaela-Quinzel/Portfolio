@@ -2,10 +2,13 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 441px;
     padding: 46px 165px 119px 170px;
     background-color: #d97824;
+    @media(max-width: 800px) {
+       width: 362.1%;
+    }
 `
 
 export const TitlePage = styled.h1`

@@ -2,12 +2,15 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 418px;
     padding: 46px 317px 80px 281px;
     background-color: #33a6a6;
     display: grid;
     justify-items: center;
+    @media(max-width: 800px) {
+       width: 362.1%;
+    }
 `
 
 export const InfoContainer = styled.div`

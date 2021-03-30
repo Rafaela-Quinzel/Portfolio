@@ -2,13 +2,20 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-   width: 100vw;
-   height: 438px;
+   width: 100%;
+   height: 538px;
    padding: 62px 319px 69px 281px;
    background-color: #063447;
+   @media(max-width: 800px) {
+    width: 362.1%;
+   }
 `
 
 export const wrappers = styled.div`
+    @media(max-width: 800px) {
+        width: 85%;
+        height: 80%;
+    }
 `
 
 export const TitleContainer = styled.h1`
@@ -22,6 +29,9 @@ export const TitleContainer = styled.h1`
     line-height: normal;
     letter-spacing: -0.32px;
     color: #ffffff;
+    @media(max-width: 800px) {
+        font-size: 45px;
+    }
 `
 
 export const TextAbout = styled.p`
@@ -35,6 +45,10 @@ export const TextAbout = styled.p`
     line-height: normal;
     letter-spacing: -0.16px;
     color: #ffffff;
+    @media(max-width: 800px) {
+        font-size: 18px;
+        margin: 20px 80px 26px 0;
+    }
 `
 
 export const LanguagesContainer = styled.div`
@@ -66,6 +80,9 @@ export const ButtonDowload = styled.button`
     border: none;
     text-align: center;
     cursor: pointer;
+    @media(max-width: 800px) {
+        margin: 70px 12px 0 0;
+    }
 `
 
 export const TextButton = styled.p`

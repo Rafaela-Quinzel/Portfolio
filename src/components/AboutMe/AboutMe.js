@@ -5,7 +5,7 @@ import * as S from "./styled"
 
 export default function AboutMe() {
     return (
-        <S.MainContainer>
+        <S.MainContainer id="about-me">
             <S.wrappers
                 ata-aos="fade-zoom-in" data-aos-duration="1500"
                 data-aos="fade-right"
@@ -29,7 +29,7 @@ export default function AboutMe() {
                     <S.Languages>| JavaScript</S.Languages>
                     <S.Languages>| TypeScript</S.Languages>
                 </S.LanguagesContainer>
-                <S.ButtonDowload>
+                <S.ButtonDowload title="Dowload currículo">
                     <S.TextButton>CV em PDF</S.TextButton>
                 </S.ButtonDowload>
             </S.wrappers>

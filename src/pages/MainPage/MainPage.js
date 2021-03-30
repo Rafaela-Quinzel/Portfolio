@@ -5,6 +5,8 @@ import Presentation from "../../components/Presentation/Presentation"
 import Knowledge from "../../components/Knowledge/Knowledge"
 import Education from "../../components/Education/Education"
 import Projects from "../../components/Projects/Projects"
+import Contact from "../../components/Contact/Contact"
+import Footer from "../../components/Footer/Footer"
 
 function Mainpage() {
 
@@ -32,6 +34,8 @@ function Mainpage() {
             <Knowledge/>
             <Education/>
             <Projects/>
+            <Contact/>
+            <Footer/>
         </div>
     )
 

@@ -4,7 +4,7 @@ import * as S from "./styled"
 
 function Projects() {
     return (
-        <S.MainContainer>
+        <S.MainContainer id="my-projects">
             <S.TitlePage>Meus Projetos</S.TitlePage>
             <S.CardProjectLeft
                 ata-aos="fade-zoom-in" data-aos-duration="1500"

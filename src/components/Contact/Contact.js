@@ -6,7 +6,7 @@ import whatsapp from "../../assets/whatsapp.png"
 
 function Contact() {
     return (
-        <S.MainContainer id="contact">
+        <S.MainContainer className="contact">
             <S.TitleContainer>Contrate-me!</S.TitleContainer>
             <S.TextContainer>
                 <S.Text>

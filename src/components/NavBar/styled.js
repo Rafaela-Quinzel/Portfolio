@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { Link } from "react-scroll"
+
 
 export const MainContainer = styled.div`
     width: 100%;
@@ -8,6 +10,8 @@ export const MainContainer = styled.div`
     background-color: #33a6a6;
     position: fixed;
     margin: auto;
+    z-index: 9;
+    box-shadow: 0 5px 5px rgba(12, 12, 12, 0.685);
     @media (max-width: 800px) {
         display: flex;
         align-items: center;
@@ -15,8 +19,8 @@ export const MainContainer = styled.div`
     } 
 `
 
-export const Name = styled.a`
-    margin: 0 35rem 0 0;
+export const Name = styled(Link)`
+    margin: 0 65rem 0 0;
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
@@ -25,13 +29,14 @@ export const Name = styled.a`
     letter-spacing: -0.28px;
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
     @media (max-width: 800px) {
         font-size: 2.5rem;
         margin: auto 40rem auto 0;
     }
 `
 
-export const Anchor = styled.a`
+export const Anchor = styled(Link)`
     margin: 1rem;
     font-size: 16px;
     font-weight: normal;

@@ -5,7 +5,7 @@ import * as S from "./styled"
 
 export default function AboutMe() {
     return (
-        <S.MainContainer id="about-me">
+        <S.MainContainer className="about-me">
             <S.wrappers
                 ata-aos="fade-zoom-in" data-aos-duration="1500"
                 data-aos="fade-right"

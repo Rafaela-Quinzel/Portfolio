@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const MainContainer = styled.div`
     width: 100%;
-    height: 418px;
+    height: 480px;
     padding: 46px 317px 80px 281px;
     background-color: #33a6a6;
     display: grid;
@@ -62,4 +62,16 @@ export const Text = styled.p`
     line-height: normal;
     letter-spacing: -0.15px;
     color: #ffffff;
+`
+
+export const LanguagesContainer = styled.div`
+    display: flex; 
+    justify-content: space-evenly;
+    align-self: center;
+    width: 50%;
+    margin: 10% auto 5% auto;
+`
+
+export const Languages = styled.p`
+    margin: 20px 0 5px 0;
 `

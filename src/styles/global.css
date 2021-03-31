@@ -21,7 +21,13 @@
 
 body {
     font: 400 1rem "Inter", sans-serif;
-    color:rgba(12, 12, 12, 0.685)
+}
+
+button:focus {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 

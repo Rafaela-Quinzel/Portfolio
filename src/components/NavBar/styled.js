@@ -7,7 +7,8 @@ export const MainContainer = styled.div`
     min-width:980px;
     height: 60px;
     padding: 19px 4px 16px 32px;
-    background-color: #33a6a6;
+    /* background-color: #33a6a6; */
+    background-color: #d97824;
     position: fixed;
     margin: auto;
     z-index: 9;
@@ -20,7 +21,7 @@ export const MainContainer = styled.div`
 `
 
 export const Name = styled(Link)`
-    margin: 0 65rem 0 0;
+    margin: 0 65rem 0 2rem;
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;

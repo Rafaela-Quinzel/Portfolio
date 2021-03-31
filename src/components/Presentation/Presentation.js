@@ -8,7 +8,7 @@ import photo from "../../assets/photo.jpg"
 
 export default function Presentation() {
     return (
-        <S.MainContainer id="presentation">
+        <S.MainContainer className="presentation">
             <S.ImageContainer>
                 <S.ImageUser src={photo} alt="foto usuário" title="Rafaela Quinzel" />
             </S.ImageContainer>

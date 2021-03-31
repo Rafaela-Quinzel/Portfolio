@@ -28,6 +28,56 @@ function Knowledge() {
                     <S.Text>Criação de API's para comunicação com front-end seguindo o princípio de Clean Code.</S.Text>
                 </S.BackContainer>
             </S.InfoContainer>
+            <S.LanguagesContainer>
+                <S.Languages>
+                    <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                        alt="nodejs"
+                        width="50"
+                        height="50"
+                        title="NodeJS"
+                    />
+                </S.Languages>
+                <S.Languages>
+                    <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                        alt="mysql"
+                        width="50"
+                        height="50"
+                    />
+                </S.Languages>
+                <S.Languages>
+                    <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        alt="html5"
+                        width="40"
+                        height="40" />
+                </S.Languages>
+                <S.Languages>
+                    <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        alt="css3"
+                        width="40"
+                        height="40"
+                    />
+                </S.Languages>
+                <S.Languages>
+                    <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="javascript"
+                        width="35"
+                        height="35"
+                    />
+                </S.Languages>
+                <S.Languages>
+                    <img
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                        alt="typescript"
+                        width="35"
+                        height="35"
+                    />
+                </S.Languages>
+            </S.LanguagesContainer>
         </S.MainContainer>
     )
 }

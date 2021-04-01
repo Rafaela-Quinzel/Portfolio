@@ -33,8 +33,8 @@ function Knowledge() {
                     <img
                         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                         alt="nodejs"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         title="NodeJS"
                     />
                 </S.Languages>
@@ -42,8 +42,8 @@ function Knowledge() {
                     <img
                         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
                         alt="mysql"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                     />
                 </S.Languages>
                 <S.Languages>

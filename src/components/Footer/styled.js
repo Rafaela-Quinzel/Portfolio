@@ -4,8 +4,7 @@ import styled from "styled-components"
 export const MainContainer = styled.div`
     width: 100%;
     height: 60px;
-    padding: 21px 1101px 17px 60px;
-    /* background-color: #33a6a6; */
+    padding: 21px 1365px 17px 60px;
     background-color: #d97824;
     @media(max-width: 800px) {
        width: 362.1%;

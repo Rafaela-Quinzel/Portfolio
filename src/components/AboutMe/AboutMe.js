@@ -4,15 +4,14 @@ import * as S from "./styled"
 
 
 export default function AboutMe() {
-    const [dowload, setDowload] = useState("")
-
+    
     return (
         <S.MainContainer className="about-me">
             <S.wrappers
-            // ata-aos="fade-zoom-in" data-aos-duration="1500"
-            // data-aos="fade-right"
-            // data-aos-offset="300"
-            // data-aos-easing="ease-in-sine"
+            ata-aos="fade-zoom-in" data-aos-duration="1500"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             >
                 <S.TitleContainer >
                     Sobre mim

@@ -108,3 +108,7 @@ export const SocialIcons = styled.img`
    cursor: pointer;
    /* object-fit: contain; */
 `
+
+export const SocialLink = styled.a`
+
+`

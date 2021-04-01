@@ -14,26 +14,25 @@ export const MainContainer = styled.div`
 `
 
 export const InfoContainer = styled.div`
+    width: 130%;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: center;
 `
 
 export const FrontContainer = styled.div`
     display: grid;
     width: 50%;
-    margin: 1rem 5rem 1rem 0; 
+    margin: 1rem 0.5rem 1rem 5rem;
 `
 
 export const BackContainer = styled.div`
     display: grid;
     width: 50%;
-    margin: 1rem 0 1rem 5rem; 
+    margin: 0.5rem 0 1rem 3rem; 
 `
 
 export const TitlePage = styled.h1`
-    width: 278px;
-    height: 30px;
-    margin: 0 183px 42px 221px;
+    margin: 0 auto 42px auto;
     font-size: 25px;
     font-weight: bold;
     font-stretch: normal;
@@ -52,6 +51,7 @@ export const Subtitle = styled.h2`
     line-height: normal;
     letter-spacing: -0.32px;
     color: #ffffff;
+    margin-bottom: 10px;
 `
 
 export const Text = styled.p`
@@ -59,7 +59,7 @@ export const Text = styled.p`
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.5rem;
     letter-spacing: -0.15px;
     color: #ffffff;
 `
@@ -69,7 +69,7 @@ export const LanguagesContainer = styled.div`
     justify-content: space-evenly;
     align-self: center;
     width: 50%;
-    margin: 10% auto 5% auto;
+    margin: 9% auto 5% auto;
 `
 
 export const Languages = styled.p`

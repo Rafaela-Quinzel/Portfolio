@@ -4,9 +4,10 @@ import styled from "styled-components"
 export const MainContainer = styled.div`
     width: 100%;
     height: 397px;
-    padding: 54px 378px 52px 379px;
+    padding: 45px 378px 52px 379px;
     background-color: #8d1c31;
     align-self: center;
+    margin-top: 10%;
     @media(max-width: 800px) {
        width: 362.1%;
     }
@@ -15,7 +16,7 @@ export const MainContainer = styled.div`
 export const TitleContainer = styled.h1`
     width: 290px;
     height: 52px;
-    margin: 0 116px 35px 117px;
+    margin: 0 auto 35px auto;
     font-size: 42px;
     font-weight: bold;
     font-stretch: normal;
@@ -40,12 +41,12 @@ export const TextContainer = styled.div`
 `
 
 export const Text = styled.p`
-    margin: 10px auto 30px auto;
+    margin: 10px auto 20px auto;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.8rem;
     letter-spacing: -0.24px;
     text-align: center;
     color: #ffffff;
@@ -77,4 +78,7 @@ export const SocialIcons = styled.img`
    margin: 20px auto 5px 20px;
    cursor: pointer;
    /* object-fit: contain; */
+`
+
+export const SocialLink = styled.a`
 `

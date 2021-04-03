@@ -44,6 +44,7 @@ export const CardProjectOne = styled.div`
         width: 390px;
         height: 42vh;
         padding: 0;
+        margin: 4% 2% 0 10%;
     }
 `
 
@@ -63,7 +64,8 @@ export const CardProjectTwo = styled.div`
     @media(max-width: 800px) {
         width: 390px;
         height: 42vh;
-        padding: 0; 
+        padding: 0;
+        margin: 0 5% 0 8%; 
     }
 `
 
@@ -83,7 +85,7 @@ export const CardProjectThree = styled.div`
         width: 390px;
         height: 42vh;
         padding: 0; 
-        margin-top: 24%;
+        margin: 25% 2% 4% 10%;
     }
 `
 
@@ -249,13 +251,14 @@ export const ButtonProjects = styled.button`
     height: 40px;
     margin: 45px auto 0 42%;
     padding: 5px 30px 7px 31px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #063447;
     border: none;
     text-align: center;
     box-shadow: none;
     cursor: pointer;
+
     &:hover{
         background-color: #052a3a; 
         transition: background-color 1s;
@@ -263,8 +266,8 @@ export const ButtonProjects = styled.button`
 
     @media(max-width: 800px) {
         margin: 10% auto 0 40%;
-        width: 280px;
-        height: 60px;
+        width: 290px;
+        height: 70px;
     }
 `
 
@@ -280,7 +283,7 @@ export const TextButton = styled.a`
     text-decoration: none;
 
     @media(max-width: 800px) {
-        font-size: 18px;
+        font-size: 20px;
     }
 `
 

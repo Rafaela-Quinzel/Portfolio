@@ -6,6 +6,7 @@ function Knowledge() {
     return (
         <S.MainContainer>
             <S.TitlePage>Meus Conhecimentos</S.TitlePage>
+
             <S.InfoContainer>
                 <S.FrontContainer
                     ata-aos="fade-zoom-in" data-aos-duration="1500"
@@ -28,6 +29,7 @@ function Knowledge() {
                     <S.Text>Criação de API's para comunicação com front-end seguindo o princípio de Clean Code.</S.Text>
                 </S.BackContainer>
             </S.InfoContainer>
+
             <S.LanguagesContainer>
                 <S.Languages>
                     <img

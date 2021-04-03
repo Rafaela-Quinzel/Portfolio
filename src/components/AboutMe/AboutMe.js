@@ -1,12 +1,13 @@
-import React, { useState } from "react"
+import React from "react"
 import * as S from "./styled"
 
 
 
 export default function AboutMe() {
-    
+
     return (
         <S.MainContainer className="about-me">
+
             <S.wrappers
             ata-aos="fade-zoom-in" data-aos-duration="1500"
             data-aos="fade-right"
@@ -15,10 +16,11 @@ export default function AboutMe() {
             >
                 <S.TitleContainer >
                     Sobre mim
-            </S.TitleContainer>
+                </S.TitleContainer>
+
                 <S.TextContainer>
                     <S.TextAbout>
-                        &nbsp;&nbsp; Sou uma profissional com experiência na área administrativa, financeira e em transição de carreira.
+                        &nbsp;&nbsp;Sou uma profissional com experiência na área administrativa, financeira e em transição de carreira.
                     </S.TextAbout>
                     <S.TextAbout>
                         &nbsp;&nbsp;No ano de 2020, muitas coisas aconteceram e mudanças foram necessárias.
@@ -29,6 +31,7 @@ export default function AboutMe() {
                         &nbsp;&nbsp;Personalidade dinâmica, comunicativa, responsável, comprometida e pontual. Gosto de trabalhar em equipe e tenho facilidade em aprendizado. Motivada por desafios e trabalhos que possam ampliar meus conhecimentos, minhas capacidades, habilidades e buscar melhor posicionamento no mercado de trabalho.
                     </S.TextAbout>
                 </S.TextContainer>
+
                 <S.ButtonDowload
                     title="Dowload currículo"
                     type="submit">

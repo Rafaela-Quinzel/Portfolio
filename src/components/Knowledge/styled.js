@@ -8,8 +8,10 @@ export const MainContainer = styled.div`
     background-color: #33a6a6;
     display: grid;
     justify-items: center;
+
     @media(max-width: 800px) {
-       width: 362.1%;
+       width: 362%;
+       height: 500px;
     }
 `
 
@@ -17,6 +19,10 @@ export const InfoContainer = styled.div`
     width: 130%;
     display: flex;
     justify-content: center;
+
+    @media(max-width: 800px) {
+       width: 164%;
+    }
 `
 
 export const FrontContainer = styled.div`
@@ -28,7 +34,7 @@ export const FrontContainer = styled.div`
 export const BackContainer = styled.div`
     display: grid;
     width: 50%;
-    margin: 0.5rem 0 1rem 3rem; 
+    margin: 0.5rem 0 1rem 3rem;
 `
 
 export const TitlePage = styled.h1`
@@ -62,6 +68,11 @@ export const Text = styled.p`
     line-height: 1.5rem;
     letter-spacing: -0.15px;
     color: #ffffff;
+
+    @media(max-width: 800px) {
+        font-size: 18px;
+        letter-spacing: -0.10px;
+    }
 `
 
 export const LanguagesContainer = styled.div`
@@ -70,6 +81,10 @@ export const LanguagesContainer = styled.div`
     align-self: center;
     width: 50%;
     margin: 9% auto 5% auto;
+
+    @media(max-width: 800px) {
+        width: 70%;
+    }
 `
 
 export const Languages = styled.p`

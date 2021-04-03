@@ -8,8 +8,9 @@ export const MainContainer = styled.div`
     background-color: #8d1c31;
     align-self: center;
     margin-top: 10%;
+
     @media(max-width: 800px) {
-       width: 362.1%;
+       width: 362%;
     }
 `
 
@@ -38,6 +39,11 @@ export const TextContainer = styled.div`
     text-align: center;
     color: #ffffff;
     margin: 10px auto 51px auto;
+  
+    @media(max-width: 800px) {
+        width: 430px;
+        height: 110px;
+    }
 `
 
 export const Text = styled.p`
@@ -77,8 +83,10 @@ export const SocialIcons = styled.img`
    height: 27px;
    margin: 20px auto 5px 20px;
    cursor: pointer;
-   /* object-fit: contain; */
 `
 
 export const SocialLink = styled.a`
+    @media(max-width: 800px) {
+        margin: 20px auto 5px 20px;
+    }
 `

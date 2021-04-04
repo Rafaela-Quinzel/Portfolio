@@ -4,11 +4,11 @@ import styled from "styled-components"
 export const MainContainer = styled.div`
     width: 100%;
     height: 1250px;
-    background-color: #f2f2f2;
+    position: relative;
 
     @media(max-width: 800px) {
        width: 78rem;
-       height: 1200px;
+       height: 100%;
     }
 `
 
@@ -265,7 +265,7 @@ export const ButtonProjects = styled.button`
     }
 
     @media(max-width: 800px) {
-        margin: 10% auto 0 40%;
+        margin: 10% auto 10% 40%;
         width: 290px;
         height: 70px;
     }

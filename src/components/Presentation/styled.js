@@ -15,7 +15,7 @@ export const MainContainer = styled.div`
 
 export const ImageContainer = styled.div`
    width: 520px;
-   height: 525px;
+   height: 555px;
 
    @media(max-width: 800px) {
       width: 400px;
@@ -25,7 +25,7 @@ export const ImageContainer = styled.div`
 `
 
 export const ImageUser = styled.img`
-   width: 520px;
+   width: 490px;
    height: 530px;
 
    @media(max-width: 800px) {
@@ -36,7 +36,7 @@ export const ImageUser = styled.img`
 `
 
 export const TextContainer = styled.div`
-   width: 68vw;
+   width: 72vw;
    height: 530px;
    padding: 123px 52px 162px 155px;
    background-color: #8d1c31;

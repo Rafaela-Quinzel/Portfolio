@@ -36,8 +36,8 @@ export default function AboutMe() {
                     title="Dowload currículo"
                     type="submit">
                     <S.TextButton
-                        href="/CV_Rafaela_Quinzel.pdf"
-                        download="CV_Rafaela_Quinzel.pdf"
+                        href="/CV_Rafaela_de_Oliveira_Quinzel.pdf"
+                        download="CV_Rafaela_de_Oliveira_Quinzel.pdf"
                     >
                         CV em PDF
                     </S.TextButton>

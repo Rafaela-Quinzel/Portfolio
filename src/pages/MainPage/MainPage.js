@@ -1,4 +1,5 @@
 import React from "react"
+import * as S from "./styled"
 import AboutMe from "../../components/AboutMe/AboutMe"
 import NavBar from "../../components/NavBar/NavBar"
 import Presentation from "../../components/Presentation/Presentation"
@@ -12,7 +13,7 @@ import Footer from "../../components/Footer/Footer"
 function Mainpage() {
 
     return(
-        <div>
+        <S.MainContainer>
             <NavBar/>
             <Presentation/>
             <AboutMe/>
@@ -21,8 +22,8 @@ function Mainpage() {
             <Projects/>
             <Contact/>
             <Footer/>
-        </div>
-    )
 
+        </S.MainContainer>
+    )
 }
 export default Mainpage

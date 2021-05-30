@@ -8,7 +8,7 @@ export default function AboutMe() {
     return (
         <S.MainContainer className="about-me">
 
-            <S.wrappers
+            <S.Wrappers
             ata-aos="fade-zoom-in" data-aos-duration="1500"
             data-aos="fade-right"
             data-aos-offset="300"
@@ -42,7 +42,7 @@ export default function AboutMe() {
                         CV em PDF
                     </S.TextButton>
                 </S.ButtonDowload>
-            </S.wrappers>
+            </S.Wrappers>
         </S.MainContainer>
     )
 }

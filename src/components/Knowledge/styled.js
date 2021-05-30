@@ -2,44 +2,50 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-    width: 100%;
-    height: 480px;
-    padding: 46px 317px 80px 281px;
+    width: 100vw;
+    height: 450px;
     background-color: #33a6a6;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    @media(max-width: 800px) {
-       width: 362%;
-       height: 500px;
+    @media screen and (min-width: 1024px) {
+       width: 100%;
+       height: 480px;
     }
 `
 
 export const InfoContainer = styled.div`
-    width: 130%;
+    width: 85%;
+    height: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 30px auto 10px 15px;
 
-    @media(max-width: 800px) {
+    /* @media(max-width: 800px) {
        width: 164%;
-    }
+    } */
 `
 
 export const FrontContainer = styled.div`
-    display: grid;
-    width: 50%;
-    margin: 1rem 0.5rem 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   // margin: 1rem 0.5rem 1rem 5rem;
 `
 
 export const BackContainer = styled.div`
-    display: grid;
-    width: 50%;
-    margin: 0.5rem 0 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //margin: 0.5rem 0 1rem 3rem;
 `
 
 export const TitlePage = styled.h1`
-    margin: 0 auto 42px auto;
-    font-size: 25px;
+    margin: 30px auto 10px auto;
+    font-size: 1.5rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -50,43 +56,40 @@ export const TitlePage = styled.h1`
 `
 
 export const Subtitle = styled.h2`
-    font-size: 55px;
+    font-size: 1rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.32px;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin: 12px 0;
 `
 
 export const Text = styled.p`
-    font-size: 16px;
+    font-size: 0.68rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5rem;
     letter-spacing: -0.15px;
     color: #ffffff;
+    
 
-    @media(max-width: 800px) {
+    /* @media(max-width: 800px) {
         font-size: 18px;
         letter-spacing: -0.10px;
-    }
+    } */
 `
 
 export const LanguagesContainer = styled.div`
     display: flex; 
     justify-content: space-evenly;
-    align-self: center;
-    width: 50%;
-    margin: 9% auto 5% auto;
-
-    @media(max-width: 800px) {
-        width: 70%;
-    }
+    align-items: center;
+    width: 85%;
+    margin: 40px auto 0 5%;
 `
 
-export const Languages = styled.p`
-    margin: 20px 0 5px 0;
+export const Icons = styled.img`
+   width: 40px;
 `

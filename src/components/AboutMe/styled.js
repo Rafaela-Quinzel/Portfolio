@@ -2,21 +2,26 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-   width: 100%;
-   height: 538px;
-   padding: 62px 319px 69px 281px;
-   background-color: #063447;
+    width: 100vh;
+    height: 60vh;
+    background-color: #063447;
 
-    @media(max-width: 800px) {
-        padding: 32px 10px 69px 80px;
-        width: 362.1%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+        width: 100%;
+        height: 538px;
+        padding: 62px 319px 69px 281px;
     }
 `
 
-export const wrappers = styled.div`
-/* border: 1px solid red; */
+export const Wrappers = styled.div`
+    width: 34%;
+    height: 70%;
+    margin: 4% auto 2% 2%;
 
-    @media(max-width: 800px) {
+    @media screen and (min-width: 1024px) {
         width: 90%;
         height: 100%;
         margin: 2% 10% 2% 0;
@@ -24,8 +29,7 @@ export const wrappers = styled.div`
 `
 
 export const TitleContainer = styled.h1`
-    margin: 7px 29px 20px 0;
-    font-size: 42px;
+    font-size: 1.5rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -33,26 +37,22 @@ export const TitleContainer = styled.h1`
     letter-spacing: -0.32px;
     color: #ffffff;
 
-    @media(max-width: 800px) {
-        margin: 8px 29px 2px 0;
-        font-size: 45px;
+    @media screen and (min-width: 1024px) {
+        margin: 7px 29px 20px 0;
+        font-size: 42px;
     }
 `
 
 export const TextContainer = styled.p`
-    width: 780px;
-    height: 122px;
-    margin: 30px 112px 26px 0;
+    margin: 15px 0 20px 0;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 80%;
     letter-spacing: -0.16px;
     color: #ffffff;
     text-align: justify;
-    /* border: 1px solid green; */
 
-    @media(max-width: 800px) {
+    @media screen and (min-width: 1024px) {
         width: 890px;
         height: 250px;
         font-size: 18px;
@@ -61,50 +61,45 @@ export const TextContainer = styled.p`
 `
 
 export const TextAbout = styled.p`
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.10px;
     color: #ffffff;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 
-    @media(max-width: 800px) {
-        font-size: 20px;
-        margin: 25px 5px 26px 0;
+    @media screen and (min-width: 1024px) {
+        font-size: 14px;
     }
 `
 
 export const ButtonDowload = styled.button`
-    width: 150px;
-    height: 40px;
-    margin: 80px 12px 0 0;
-    padding: 5px 30px 7px 31px;
+    margin: 10px auto 0 auto;
+    width: 130px;
+    height: 35px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #bf213e;
     border: none;
     text-align: center;
-    box-shadow: none;
-    cursor: pointer;
+    
+    @media screen and (min-width: 1024px) {
+        width: 150px;
+        height: 40px;
+        margin: 80px 12px 0 0;
+        padding: 5px 30px 7px 31px;
+        cursor: pointer;
 
-    &:hover{
-        background-color: #911b30; 
-        transition: background-color 1s;
-    }
-
-    @media(max-width: 800px) {
-        margin: 30px 12px 0 0;
-        width: 250px;
-        height: 48px;
+        &:hover{
+            background-color: #911b30; 
+            transition: background-color 1s;
+        }
     }
 `
 
 export const TextButton = styled.a`
-    width: 85px;
-    height: 20px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -114,7 +109,7 @@ export const TextButton = styled.a`
     color: #ffffff;
     text-decoration: none;
 
-    @media(max-width: 800px) {
+    @media screen and (min-width: 1024px) {
         font-size: 20px;
     }
 `

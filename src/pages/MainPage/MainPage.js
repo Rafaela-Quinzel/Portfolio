@@ -22,7 +22,6 @@ function Mainpage() {
             <Projects/>
             <Contact/>
             <Footer/>
-
         </S.MainContainer>
     )
 }

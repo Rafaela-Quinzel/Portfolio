@@ -2,15 +2,15 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-    width: 100%;
-    height: 540px;
-    padding: 40px 165px 119px 170px;
+    padding: 45px 165px 119px 140px;
+    width: 362%;
+    height: 640px;
     background-color: #052635d5;
 
-    @media(max-width: 800px) {
-       padding: 45px 165px 119px 140px;
-       width: 362%;
-       height: 640px;
+    @media screen and (min-width: 800px) {
+        width: 100%;
+        height: 540px;
+        padding: 40px 165px 119px 170px;
     }
 `
 

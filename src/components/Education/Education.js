@@ -10,10 +10,10 @@ function Education() {
             <S.TitlePage>Educação</S.TitlePage>
 
             <S.InfoContainer
-                ata-aos="fade-zoom-in" data-aos-duration="1500"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
+                // ata-aos="fade-zoom-in" data-aos-duration="1500"
+                // data-aos="fade-right"
+                // data-aos-offset="300"
+                // data-aos-easing="ease-in-sine"
             >
                 <S.Subtitle>Curso Web Full Stack</S.Subtitle>
                 <S.Intitution>

@@ -30,4 +30,9 @@ button:focus {
     box-shadow: none !important;
 }
 
+.carousel {
+    margin-left: 5%;
+    width: 100%;
+}
+
 

@@ -3,24 +3,24 @@ import { Link } from "react-scroll"
 
 
 export const MainContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 65px;
-    background-color: #d97824;
-    position: fixed;
-    z-index: 1;
-    box-shadow: 0 5px 5px rgba(12, 12, 12, 0.685);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 65px;
+  background-color: #d97824;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 5px 5px rgba(12, 12, 12, 0.685);
 
-    @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     
-    }
+  }
     
 `
 
 export const NavContainer = styled.div`
-   display: none;
+  display: none;
 
     @media screen and (min-width: 1024px) {
       display: flex;
@@ -43,14 +43,16 @@ export const NavContainer = styled.div`
 `
 
 export const Wrapper = styled.div`
-   display: grid;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
    align-items: center;
    z-index: 1;
    width: 100%;
-   height: 25vh;
-   margin: 260px 0 0 0;
+   height: 30vh;
+   margin: 300px 0 0 0;
    position: absolute;
-   background-color: gray;
+   background-color:rgb(17, 16, 16);
 
  @media sreen and (min-width: 1024px) {
     display: flex;
@@ -85,7 +87,7 @@ export const Name = styled(Link)`
 `
 
 export const Anchor = styled(Link)`
-    margin: 1rem;
+    margin-top: 4%;
     font-size: 1.2rem;
     font-weight: normal;
     font-stretch: normal;

@@ -2,18 +2,19 @@ import styled from "styled-components"
 
 
 export const MainContainer = styled.div`
-    width: 100%;
-    height: 1250px;
-    position: relative;
+    width: 100vw;
+    height: 75vh;
 
-    @media(max-width: 800px) {
-       width: 78rem;
-       height: 100%;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(17, 16, 16, 0.3);
 `
 
 export const TitlePage = styled.h1`
-    margin: 4% auto 5% auto;
+    margin: 0 auto 12% auto;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -21,11 +22,25 @@ export const TitlePage = styled.h1`
     letter-spacing: -0.15px;
     text-align: center;
     color: #8D1C31;
+`
 
-    @media(max-width: 800px) {
-        margin: 5% auto 10% auto;
-        font-size: 30px;
+export const Wrappers = styled.div`
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 80%;
+   height: 60%;
+   margin: 5px auto 0 5%;
+
+    @media screen and (min-width: 600px) {
+       width: 90%;
     }
+`
+
+export const CardContainer = styled.div`
+    width: 100%;
+    height: 85%;
+    margin-bottom: 20%;
 `
 
 export const CardProjectOne = styled.div`
@@ -35,17 +50,13 @@ export const CardProjectOne = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    width: 35vw;
-    height: 44vh;
-    margin: 4% 2% 0 8%;
-    cursor: pointer;
-
-    @media(max-width: 800px) {
-        width: 390px;
-        height: 42vh;
-        padding: 0;
-        margin: 4% 2% 0 10%;
+    width: 100%;
+    height: 95%;
+   
+    @media screen and (min-width: 1024px) {
+        cursor: pointer;
     }
+    
 `
 
 export const CardProjectTwo = styled.div`
@@ -55,17 +66,11 @@ export const CardProjectTwo = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    width: 35vw;
-    height: 44vh;
-    margin: 0 8% 0 8%;
-    float: right;
-    cursor: pointer;
-
-    @media(max-width: 800px) {
-        width: 390px;
-        height: 42vh;
-        padding: 0;
-        margin: 0 5% 0 8%; 
+    width: 100%;
+    height: 95%;
+    
+    @media screen and (min-width: 1024px) {
+        cursor: pointer;
     }
 `
 
@@ -76,16 +81,11 @@ export const CardProjectThree = styled.div`
     background-position: center;
     box-shadow: inset 0 0 1em #1a1c1daf, 0 0 1em #272a2baf;
     border-radius: 10px;
-    width: 35vw;
-    height: 44vh;
-    margin: 22% 2% 4% 8%;
-    cursor: pointer;
+    width: 100%;
+    height: 95%;
 
-    @media(max-width: 800px) {
-        width: 390px;
-        height: 42vh;
-        padding: 0; 
-        margin: 25% 2% 4% 10%;
+    @media screen and (min-width: 1024px) {
+        cursor: pointer;
     }
 `
 
@@ -119,6 +119,10 @@ export const Text = styled.div`
         padding: 10% 5% 0 5%;
         border-radius: 10px;
         border: 2px solid white;  
+    }
+
+    @media screen and (min-width: 600px) {
+       font-size: 1rem;
     }
 
     @media(max-width: 800px) {
@@ -182,58 +186,53 @@ export const TextContainer = styled.div`
 `
 
 export const TitleCard = styled.h1`
-    display: none;
+    font-size: 2rem;
+    display: block;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.20px;
+    color: #33A6A6;
+    text-shadow: 1px 1px 1px #8D1C31;
 
-    @media(max-width: 800px){
-        font-size: 3rem;
-        display: block;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.20px;
-        color: #33A6A6;
-        text-shadow: 1px 1px 1px #8D1C31;
-        cursor: default;
+
+    @media screen and (min-width: 1024px){
+        display: none;
     }
 `
 
 export const DescriptionProject = styled.p`
-    display: none;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6rem;
+    letter-spacing: -0.20px;
+    text-align: center;
 
-    @media(max-width: 800px) {
-        display: flex;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.6rem;
-        letter-spacing: -0.20px;
-        text-align: center;
-        cursor: default;
+    @media screen and (min-width: 1024px){
+        display: none;
     }
 ` 
 
 export const ButtonCard = styled.a`
-    display: none;
-
-    @media(max-width: 800px) {
-        display: block;
-        border-radius: 8px;
-        padding: 4%;
-        margin: 5% auto 4% auto;
-        width: 160px;
-        height: 45px;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.28px;
-        text-align: center;
-        background-color:  #8D1C31;
-        text-decoration: none;
-    }
+    display: block;
+    border-radius: 8px;
+    padding: 4%;
+    margin: 5% auto 4% auto;
+    width: 150px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    text-align: center;
+    background-color:  #8D1C31;
+    text-decoration: none;
 
     &:active{
         text-decoration: none;
@@ -244,13 +243,18 @@ export const ButtonCard = styled.a`
         text-decoration: none;
         color: white;
     }
+
+    @media screen and (min-width: 1024px){
+        display: none;
+    }
+
+    
 ` 
 
 export const ButtonProjects = styled.button`
-    width: 250px;
-    height: 40px;
-    margin: 45px auto 0 42%;
-    padding: 5px 30px 7px 31px;
+    width: 50vw;
+    height: 5vh;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #063447;
@@ -259,20 +263,22 @@ export const ButtonProjects = styled.button`
     box-shadow: none;
     cursor: pointer;
 
-    &:hover{
-        background-color: #052a3a; 
-        transition: background-color 1s;
-    }
+ 
 
-    @media(max-width: 800px) {
+    @media screen and (min-width: 1024px) {
         margin: 10% auto 10% 40%;
         width: 290px;
         height: 70px;
+
+        &:hover{
+            background-color: #052a3a; 
+            transition: background-color 1s;
+        }
     }
 `
 
 export const TextButton = styled.a`
-    font-size: 16px;
+    font-size: 0.895rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -281,10 +287,6 @@ export const TextButton = styled.a`
     text-align: center;
     color: #ffffff;
     text-decoration: none;
-
-    @media(max-width: 800px) {
-        font-size: 20px;
-    }
 `
 
 

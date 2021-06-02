@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
    z-index: 1;
    width: 100%;
    height: 30vh;
-   margin: 300px 0 0 0;
+   margin: 250px 0 0 0;
    position: absolute;
    background-color:rgb(17, 16, 16);
 

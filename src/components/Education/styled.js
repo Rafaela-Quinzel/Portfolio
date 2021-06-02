@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const MainContainer = styled.div`
     width: 100vw;
-    height: 70vh;
+    height: 90vh;
     background-color: #052635d5;
 
     display: flex;
@@ -38,7 +38,7 @@ export const TitlePage = styled.h1`
 
 export const InfoContainer = styled.div`
    width: 85%;
-   height: 80%;
+   height: 85%;
    margin: 0 auto 0 5%;
  
    display: flex;
@@ -59,8 +59,8 @@ export const InfoContainer = styled.div`
 
 export const CourseContainer = styled.div`
    width: 100%;
-   height: 47.5%;
-   padding: 3%;
+   height: 46%;
+   padding: 4% 2% 0 3%;
    box-sizing: border-box;
 
    display: flex;
@@ -76,7 +76,7 @@ export const CourseContainer = styled.div`
 `
 
 export const Subtitle = styled.h2`
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;

@@ -28,8 +28,9 @@ export const ImageContainer = styled.div`
    //border: 1px solid black;
 
    @media screen and (min-width: 600px) { 
-      width: 32%;
-      height: 45%;
+      margin-top: 5%;
+      width: 30%;
+      height: 50%;
    }
 
    @media screen and (min-width: 1024px) {

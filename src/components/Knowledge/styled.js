@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const MainContainer = styled.div`
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     background-color: #33a6a6;
 
     display: flex;
@@ -62,7 +62,7 @@ export const Subtitle = styled.h2`
     line-height: normal;
     letter-spacing: -0.32px;
     color: #ffffff;
-    margin: 12px 0;
+    margin: 8% 0 2% 0;
 
     @media screen and (min-width: 600px) {
         font-size: 1.5rem;

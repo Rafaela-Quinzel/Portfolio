@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const MainContainer = styled.div`
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     background-color: #063447;
 
     display: flex;
@@ -41,6 +41,7 @@ export const TitleContainer = styled.h1`
     line-height: normal;
     letter-spacing: -0.32px;
     color: #ffffff;
+    margin-top: 4%;
 
     @media screen and (min-width: 600px){
       font-size: 1.8rem;
@@ -99,6 +100,11 @@ export const ButtonDowload = styled.button`
     background-color: #bf213e;
     border: none;
     text-align: center;
+
+    @media screen and (min-width: 600px) {
+        width: 180px;
+        height: 40px;
+    }
     
     @media screen and (min-width: 1024px) {
         width: 150px;

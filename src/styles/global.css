@@ -35,4 +35,10 @@ button:focus {
     width: 100%;
 }
 
+@media screen and (min-width: 600px) {
+    .carousel {
+        margin-left: 2%;
+    }
+ }
+
 

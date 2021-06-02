@@ -212,6 +212,10 @@ export const DescriptionProject = styled.p`
     letter-spacing: -0.20px;
     text-align: center;
 
+    @media screen and (min-width: 600px) {
+        font-size: 0.9rem;
+    }
+
     @media screen and (min-width: 1024px){
         display: none;
     }
@@ -244,6 +248,10 @@ export const ButtonCard = styled.a`
         color: white;
     }
 
+    @media screen and (min-width: 600px) {
+        padding: 2% 0 5% 0;
+    }
+
     @media screen and (min-width: 1024px){
         display: none;
     }
@@ -262,6 +270,11 @@ export const ButtonProjects = styled.button`
     text-align: center;
     box-shadow: none;
     cursor: pointer;
+
+    @media screen and (min-width: 600px) {
+        width: 40vw;
+        height: 6vh;
+    }
 
  
 

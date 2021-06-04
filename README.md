@@ -31,6 +31,10 @@ Meu portfólio de Desenvolvedora Web 👩‍💻
    <a href="https://styled-components.com/docs/advanced">
       <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Dayjs" width="45" height="55" style="margin: 5px 5px 0 10px"/>
    </a>
+   
+      <a href="https://michalsnik.github.io/aos/">
+      <img src="https://www.drupal.org/files/project-images/68747470733a2f2f7333322e706f7374696d672e6f72672f6b7476743539686f6c2f616f735f6865616465722e706e67.png" alt="Dayjs" width="45" height="55" style="margin: 5px 5px 0 10px"/>
+   </a>
 </div>
 
 <br/>

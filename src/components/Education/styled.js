@@ -11,7 +11,8 @@ export const MainContainer = styled.div`
     align-items: center;
 
     @media screen and (min-width: 1024px) {
-        height: 640px;
+        height: 95vh;
+        justify-content: center;
     }
 `
 
@@ -28,11 +29,6 @@ export const TitlePage = styled.h1`
 
     @media screen and (min-width: 600px) {
         font-size: 1.8rem;
-    }
-
-    @media screen and (min-width: 1024px) {
-        margin: 0 auto;
-        font-size: 25px;
     }
 `
 
@@ -51,8 +47,12 @@ export const InfoContainer = styled.div`
     }
 
     @media screen and (min-width: 1024px) {
-        width: 390px;
-        margin-top: 10%;
+        width: 80%;
+        height: 60%;
+        margin: 5% auto ;
+
+        flex-direction: row;
+        align-items: center;
     }
 `
 
@@ -70,8 +70,9 @@ export const CourseContainer = styled.div`
    border: 1px outset whitesmoke;
 
     @media screen and (min-width: 1024px) {
-        width: 390px;
-        margin-top: 10%;
+        height: 100%;
+        width: 45%;
+        padding: 2% 4% 0 3%;
     }
 `
 
@@ -160,6 +161,11 @@ export const Description = styled.p`
     @media screen and (min-width: 600px) {
         margin-top: 5px;
         font-size: 0.8rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 15px;
+        font-size: 0.875rem;
     }
 
 `

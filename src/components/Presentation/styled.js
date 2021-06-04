@@ -7,16 +7,19 @@ export const MainContainer = styled.div`
    background-color: #8d1c31;
 
    display: flex;
-  // flex-direction: column;
    justify-content: center;
    align-items: center;
 
-  //border: 1px solid green;
+   @media screen and (min-width: 780px) {
+     height: 80vh;
+   }
 
    @media screen and (min-width: 1024px) { 
-      width: 100%;
-      height: 530px;
-      display: flex;
+      height: 90vh;
+   }
+
+   @media screen and (min-width: 1080px) { 
+      height: 95vh;
    }
 `
 
@@ -24,18 +27,29 @@ export const ImageContainer = styled.div`
    width: 28%;
    height: 32%;
    margin: 0 5% 0 5%;
-   
-   //border: 1px solid black;
 
-   @media screen and (min-width: 600px) { 
+   @media screen and (min-width: 400px) { 
       margin-top: 5%;
       width: 30%;
       height: 50%;
    }
 
+   @media screen and (min-width: 600px) { 
+      margin-top: 5%;
+      width: 25%;
+      height: 50%;
+   }
+
    @media screen and (min-width: 1024px) {
-      width: 520px;
-      height: 555px;
+      width: 40%;
+      height: 500px;
+      margin: 64px 0 0 0;
+   }
+
+   @media screen and (min-width: 1080px) {
+      width: 35%;
+      height: 530px;
+      margin: 64px 0 0 0;
    }
 `
 
@@ -45,11 +59,7 @@ export const ImageUser = styled.img`
    border-radius: 10px;
 
    @media screen and (min-width: 1024px) {
-      /* width: 490px;
-      height: 530px;
-      width: 340px;
-      height: 380px;
-      border-radius: 20px; */
+      border-radius: 0;
    }
 `
 
@@ -64,9 +74,13 @@ export const TextContainer = styled.div`
    }
    
    @media screen and (min-width: 1024px) {
-      width: 72vw;
-      height: 530px;
-      padding: 123px 52px 162px 155px;
+      width: 50%;
+      height: 35%;
+      margin: 10% auto 0 4%;
+   }
+
+   @media screen and (min-width: 1024px) {
+      margin: 5% auto 0 6%;
    }
 `
 
@@ -74,6 +88,8 @@ export const SocialContainer = styled.div`
   display: none;
 
    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
       margin: 0 0 0 40px;
       width: 20px;
       float: right;
@@ -85,6 +101,10 @@ export const SocialIcons = styled.img`
    height: 27px;
    margin: 0 0 14px 15px;
    cursor: pointer;
+
+   @media screen and (min-width: 1080px) {
+      margin: 0 0 25px 15px;
+   }
 `
 
 export const SocialLink = styled.a`
@@ -105,17 +125,8 @@ export const TitleContainer = styled.h1`
    }
 
    @media screen and (min-width: 1024px) {
-      margin: 110px 15px 6px 0;
-      width: 380px;
-      height: 122px;
-      margin: 27px 10px 6px 0;
-      font-size: 50px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: -0.29px;
-      color: #d97824;
+      width: 80%;
+      font-size: 2.8rem;
    }
 `
 
@@ -131,13 +142,7 @@ export const Title = styled.h1`
 
    @media screen and (min-width: 600px){
       font-size: 1.4rem;
-   }
-   
-   @media screen and (min-width: 1024px) {
-      margin: 6px 189px 12px 10px;
-      font-size: 24px;
-  
-   }
+   }   
 `
 
 export const Paragraph = styled.p`
@@ -155,8 +160,7 @@ export const Paragraph = styled.p`
    }
 
    @media screen and (min-width: 1024px) {
-      margin: 12px 207px 20px 45px;
-      font-size: 16px;
+      font-size: 1rem;
    }
 `
 

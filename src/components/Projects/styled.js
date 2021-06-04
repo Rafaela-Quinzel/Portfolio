@@ -11,10 +11,15 @@ export const MainContainer = styled.div`
     align-items: center;
 
     background-color: rgba(17, 16, 16, 0.3);
+
+    @media screen and (min-width: 780px) {
+        height: 95vh;
+    }
+
 `
 
 export const TitlePage = styled.h1`
-    margin: 0 auto 12% auto;
+    margin: 0 auto 15% auto;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -22,6 +27,18 @@ export const TitlePage = styled.h1`
     letter-spacing: -0.15px;
     text-align: center;
     color: #8D1C31;
+
+    @media screen and (min-width: 600px) {
+        margin: 10% auto 8% auto;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin: 4% auto 5% auto;
+    }
+
+    @media screen and (min-width: 1080px) {
+        margin: 10% auto 6% auto;
+    }
 `
 
 export const Wrappers = styled.div`
@@ -29,18 +46,40 @@ export const Wrappers = styled.div`
    justify-content: space-around;
    align-items: center;
    width: 80%;
-   height: 60%;
-   margin: 5px auto 0 5%;
+   height: 50%;
+   margin: 10px auto 5px auto;
 
     @media screen and (min-width: 600px) {
-       width: 90%;
+       width: 85%;
+       height: 50%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 65%;
+        height: 70%;
+        margin: 5px auto 0 auto;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1080px) {
+        width: 55%;
+        height: 50%;
     }
 `
 
 export const CardContainer = styled.div`
     width: 100%;
-    height: 85%;
+    height: 100%;
     margin-bottom: 20%;
+
+    @media screen and (min-width: 600px) {
+        margin-bottom: 5%;
+        height: 90%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 95%;
+    }
 `
 
 export const CardProjectOne = styled.div`
@@ -52,9 +91,14 @@ export const CardProjectOne = styled.div`
     border-radius: 10px;
     width: 100%;
     height: 95%;
+
+    @media screen and (min-width: 600px) {
+        height: 100%;
+    }
    
     @media screen and (min-width: 1024px) {
         cursor: pointer;
+        height: 100%;
     }
     
 `
@@ -71,6 +115,7 @@ export const CardProjectTwo = styled.div`
     
     @media screen and (min-width: 1024px) {
         cursor: pointer;
+        height: 100%;
     }
 `
 
@@ -86,6 +131,7 @@ export const CardProjectThree = styled.div`
 
     @media screen and (min-width: 1024px) {
         cursor: pointer;
+        height: 100%;
     }
 `
 
@@ -166,23 +212,20 @@ export const SeeProject = styled.a`
 
 
 export const TextContainer = styled.div`
-    display: none;
-
-    @media(max-width: 800px) {
-        display: grid;
-        width: 100%;
-        height: 100%;
-        padding: 4%;
-        border-radius: 10px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.28px;
-        text-align: center;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
 `
 
 export const TitleCard = styled.h1`
@@ -198,7 +241,7 @@ export const TitleCard = styled.h1`
 
 
     @media screen and (min-width: 1024px){
-        display: none;
+        font-size: 2.4rem;
     }
 `
 
@@ -217,7 +260,8 @@ export const DescriptionProject = styled.p`
     }
 
     @media screen and (min-width: 1024px){
-        display: none;
+        font-size: 1.2rem;
+        margin-top: 2%;
     }
 ` 
 
@@ -250,56 +294,74 @@ export const ButtonCard = styled.a`
 
     @media screen and (min-width: 600px) {
         padding: 2% 0 5% 0;
-    }
-
-    @media screen and (min-width: 1024px){
-        display: none;
-    }
-
-    
+    } 
 ` 
 
-export const ButtonProjects = styled.button`
+export const ButtonProjects = styled.a`
     width: 50vw;
-    height: 5vh;
-    margin: 0 auto;
+    height: 6.5vh;
+    margin: 5% auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #063447;
     border: none;
     text-align: center;
     box-shadow: none;
-    cursor: pointer;
-
-    @media screen and (min-width: 600px) {
-        width: 40vw;
-        height: 6vh;
-    }
-
- 
-
-    @media screen and (min-width: 1024px) {
-        margin: 10% auto 10% 40%;
-        width: 290px;
-        height: 70px;
-
-        &:hover{
-            background-color: #052a3a; 
-            transition: background-color 1s;
-        }
-    }
-`
-
-export const TextButton = styled.a`
-    font-size: 0.895rem;
+    padding:  4% 2%;
+    font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.28px;
-    text-align: center;
-    color: #ffffff;
     text-decoration: none;
+  
+    &:active{
+        text-decoration: none;
+        color: white;
+    }
+
+    &:visited{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    @media screen and (min-width: 480px) {
+        width: 40vw;
+        height: 8vh;
+        padding:  4% 2%;
+    }
+    
+
+    @media screen and (min-width: 600px) {
+        width: 35vw;
+        height: 8vh;
+        margin: 5% auto 10% auto;
+        padding:  2% 2%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin: 4% auto 4% auto;
+        padding: 2% 2%;
+        width: 20vw;
+        height: 9vh;
+        cursor: pointer;
+        
+        &:hover{
+            background-color: #052a3a; 
+            transition: background-color 1s;
+            
+        }
+    }
+
+    @media screen and (min-width: 1080px) {
+        height: 4vh;
+        width: 16vw;
+        margin: 4% auto 10% auto;
+        padding:  1% 2% 2.4% 2%;
+    }
 `
+
+
 
 

@@ -58,7 +58,7 @@ export default function Presentation() {
                         />
                     </S.SocialLink>
                 </S.SocialContainer>
-                
+
                 <S.TitleContainer>Eu sou <br /> Rafaela Quinzel</S.TitleContainer>
                 <S.Title>Desenvolvedora Web Full Stack</S.Title>
                 <S.Paragraph>Apaixonada por tecnologia e programação</S.Paragraph>

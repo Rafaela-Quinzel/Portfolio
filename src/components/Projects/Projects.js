@@ -11,14 +11,15 @@ function Projects() {
     return (
         <S.MainContainer className="my-projects">
             <S.TitlePage>Meus Projetos</S.TitlePage>
+
             <S.Wrappers>
                 <Carousel
                     className="carousel"
                     showArrows={true}
                     autoFocus={true}
-                // autoPlay={true}
-                // infiniteLoop={true}
-                // interval={5000}
+                    autoPlay={true}
+                    infiniteLoop={true}
+                    interval={5000}
                 >
                     <S.CardContainer>
                         <S.CardProjectOne>
@@ -73,13 +74,13 @@ function Projects() {
                     </S.CardContainer>
                 </Carousel>
             </S.Wrappers>
-            <S.ButtonProjects title="Ver mais Projetos">
-                <S.TextButton
-                    href="https://github.com/Rafaela-Quinzel?tab=repositories"
-                    target="_blank"
-                >
-                    VER MAIS PROJETOS
-                </S.TextButton>
+
+            <S.ButtonProjects
+                title="Ver mais Projetos"
+                href="https://github.com/Rafaela-Quinzel?tab=repositories"
+                target="_blank"
+            >
+                VER MAIS PROJETOS
             </S.ButtonProjects>
         </S.MainContainer>
     )

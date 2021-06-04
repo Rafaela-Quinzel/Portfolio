@@ -35,10 +35,18 @@ export const Wrapper = styled.div`
    z-index: 2147483647;
    width: 100%;
    height: 40vh;
-   margin: 315px 0 0 0;
+   margin: 320px 0 0 0;
    padding-bottom: 5%;
-   position: fixed;
+   position: absolute;
    background-color:rgb(17, 16, 16);
+
+  @media sreen and (min-width: 480px) {
+    margin: 0% 0 0 0;
+  }
+
+  @media sreen and (min-width: 1024px) {
+    display: none;
+  }
 
   @media sreen and (min-width: 1024px) {
     display: none;

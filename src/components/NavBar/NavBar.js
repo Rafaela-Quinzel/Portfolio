@@ -52,6 +52,7 @@ export default function Navbar() {
                     <S.ButtonCloseMenu onClick={closeMenu}>
                         <i className="fas fa-times"></i>
                     </S.ButtonCloseMenu>
+                    
                     <S.Wrapper>
                         <S.Anchor
                             to="about-me"

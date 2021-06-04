@@ -28,15 +28,8 @@ Meu portfólio de Desenvolvedora Web 👩‍💻
    <a href="https://reactrouter.com/web/guides/quick-start">
       <img src="https://raw.githubusercontent.com/maman/react-router-legacy/HEAD/logo/vertical@2x.png" alt="react-router-dom" width="60" height="30" style="margin: 5px 5px 0 10px"/>
    </a>
- 
-   <a href="https://www.npmjs.com/package/axios">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Axios_logo_%282017%29.svg/1200px-Axios_logo_%282017%29.svg.png" alt="Dayjs" width="60" height="20" style="margin: 5px 5px 0 10px"/>
-   </a>
    <a href="https://styled-components.com/docs/advanced">
       <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Dayjs" width="45" height="55" style="margin: 5px 5px 0 10px"/>
-   </a>
-   <a href="https://pt-br.reactjs.org/" style="margin-right: 10%">
-      <img src="https://image.pngaaa.com/896/2507896-middle.png" alt="react" width="85" height="30" style="margin: 5px 30px 0 10px"/>
    </a>
 </div>
 

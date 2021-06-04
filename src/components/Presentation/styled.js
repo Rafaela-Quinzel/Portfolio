@@ -28,16 +28,16 @@ export const ImageContainer = styled.div`
    height: 32%;
    margin: 0 5% 0 5%;
 
-   @media screen and (min-width: 400px) { 
-      margin-top: 5%;
-      width: 30%;
-      height: 50%;
+   @media screen and (min-width: 480px) { 
+      margin-top: 8%;
+      width: 35%;
+      height: 60%;
    }
 
    @media screen and (min-width: 600px) { 
       margin-top: 5%;
-      width: 25%;
-      height: 50%;
+      width: 32%;
+      height: 60%;
    }
 
    @media screen and (min-width: 1024px) {
@@ -69,7 +69,7 @@ export const TextContainer = styled.div`
    margin: 40px auto 0 0;
 
    @media screen and (min-width: 600px){
-      width: 60%;
+      width: 50%;
       height: 40%;
    }
    
@@ -79,7 +79,7 @@ export const TextContainer = styled.div`
       margin: 10% auto 0 4%;
    }
 
-   @media screen and (min-width: 1024px) {
+   @media screen and (min-width: 1080px) {
       margin: 5% auto 0 6%;
    }
 `

@@ -60,6 +60,11 @@ export const TextContainer = styled.div`
     margin: 5% 0 10% 0;
     text-align: justify;
 
+    @media screen and (min-width: 400px) {
+        width: 80%;
+        height: 65%;
+    }
+
     @media screen and (min-width: 600px){
         width: 90%;
         height: 70%;
@@ -71,7 +76,6 @@ export const TextContainer = styled.div`
         height: 40%;
     }
 
-    
     @media screen and (min-width: 1080px) {
         width: 85%;
         height: 50%;

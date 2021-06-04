@@ -12,8 +12,7 @@ export const MainContainer = styled.div`
     align-items: center;
 
     @media screen and (min-width: 1024px) {
-       width: 100%;
-       height: 480px;
+       height: 90vh;
     }
 `
 
@@ -24,18 +23,41 @@ export const InfoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: 5% auto 2% 5%;
+
+    @media screen and (min-width: 1024px) {
+        width: 90%;
+        height: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `
 
 export const FrontContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media screen and (min-width: 1024px) {
+        width: 46%;
+        height: 75%;
+        padding: 2%;
+        margin-top: 2%;
+        border: 1px inset whitesmoke;
+    }
 `
 
 export const BackContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media screen and (min-width: 1024px) {
+        width: 46%;
+        height: 75%;
+        padding: 2%;
+        margin-top: 2%;
+        border: 1px outset whitesmoke;
+    }
 `
 
 export const TitlePage = styled.h1`
@@ -90,8 +112,22 @@ export const LanguagesContainer = styled.div`
     align-items: center;
     width: 85%;
     margin: 60px auto 0 5%;
+
+    @media screen and (min-width: 1024px) {
+        width: 60%;
+        margin: 50px auto 5px auto;
+    }
+
+    @media screen and (min-width: 1080px) {
+        width: 45%;
+        margin: 40px auto 12px auto;
+    }
 `
 
 export const Icons = styled.img`
    width: 35px;
+
+    @media screen and (min-width: 1024px) {
+       width: 60px;
+    }
 `

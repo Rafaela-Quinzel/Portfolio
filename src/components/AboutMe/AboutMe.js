@@ -9,10 +9,10 @@ export default function AboutMe() {
         <S.MainContainer className="about-me">
 
             <S.Wrappers
-            // ata-aos="fade-zoom-in" data-aos-duration="1500"
-            // data-aos="fade-right"
-            // data-aos-offset="300"
-            // data-aos-easing="ease-in-sine"
+                ata-aos="fade-zoom-in" data-aos-duration="1500"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
             >
                 <S.TitleContainer >
                     Sobre mim
@@ -28,7 +28,7 @@ export default function AboutMe() {
                         Estou me dedicando muito e cada vez mais apaixonada neste mundo de tecnologia.
                     </S.TextAbout>
                     <S.TextAbout>
-                        Personalidade dinâmica, comunicativa, responsável, comprometida e pontual. Gosto de trabalhar em equipe e tenho facilidade em aprendizado. 
+                        Personalidade dinâmica, comunicativa, responsável, comprometida e pontual. Gosto de trabalhar em equipe e tenho facilidade em aprendizado.
                         Motivada por desafios e trabalhos que possam ampliar meus conhecimentos, minhas capacidades, habilidades e buscar melhor posicionamento no mercado de trabalho.
                     </S.TextAbout>
                 </S.TextContainer>

@@ -11,9 +11,7 @@ export const MainContainer = styled.div`
     align-items: center;
 
     @media screen and (min-width: 1024px) {
-        width: 100%;
-        height: 538px;
-        padding: 62px 319px 69px 281px;
+        height: 85vh;
     }
 `
 
@@ -27,9 +25,9 @@ export const Wrappers = styled.div`
     align-items: center;
 
     @media screen and (min-width: 1024px) {
-        width: 90%;
-        height: 100%;
-        margin: 2% 10% 2% 0;
+        width: 100%;
+        height: 90%;
+        margin: 4% auto;
     }
 `
 
@@ -48,8 +46,11 @@ export const TitleContainer = styled.h1`
     }
 
     @media screen and (min-width: 1024px) {
-        margin: 7px 29px 20px 0;
-        font-size: 42px;
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1080px) {
+       margin-top: 1%;
     }
 `
 
@@ -66,10 +67,15 @@ export const TextContainer = styled.div`
     }
 
     @media screen and (min-width: 1024px) {
-        width: 890px;
-        height: 250px;
-        font-size: 18px;
-        margin: 10px 70px 26px 0;
+        width: 90%;
+        height: 40%;
+    }
+
+    
+    @media screen and (min-width: 1080px) {
+        width: 85%;
+        height: 50%;
+        margin: 4% 0;
     }
 `
 
@@ -88,7 +94,7 @@ export const TextAbout = styled.p`
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 14px;
+        font-size: 1.2rem;
     }
 `
 
@@ -107,16 +113,19 @@ export const ButtonDowload = styled.button`
     }
     
     @media screen and (min-width: 1024px) {
-        width: 150px;
-        height: 40px;
-        margin: 80px 12px 0 0;
-        padding: 5px 30px 7px 31px;
+        width: 200px;
+        height: 45px;
+        margin-top: 8%;
         cursor: pointer;
 
         &:hover{
             background-color: #911b30; 
             transition: background-color 1s;
         }
+    }
+
+    @media screen and (min-width: 1080px) {
+        margin: 0 auto;
     }
 `
 

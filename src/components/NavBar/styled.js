@@ -10,36 +10,21 @@ export const MainContainer = styled.div`
   height: 65px;
   background-color: #d97824;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 5px 5px rgba(12, 12, 12, 0.685);
-
-  @media screen and (min-width: 1024px) {
-    
-  }
-    
 `
 
 export const NavContainer = styled.div`
   display: none;
 
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      align-items: center;
-      background: none;
-      max-width: 450px;
-      height: 50px;
-      float: right;
-      margin: 0 2% 0 15%;
-    }
-
-    @media screen and (min-width: 1080px) {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background: none;
-      max-width: 500px;
-      height: 50px;
-    }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    height: 50px;
+    float: right;
+    margin: 0 8% 0 15%;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -54,9 +39,9 @@ export const Wrapper = styled.div`
    position: absolute;
    background-color:rgb(17, 16, 16);
 
- @media sreen and (min-width: 1024px) {
-    display: flex;
- }
+  @media sreen and (min-width: 1024px) {
+    display: none;
+  }
 `
 
 export const Name = styled(Link)`
@@ -69,20 +54,13 @@ export const Name = styled(Link)`
     color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
+    cursor: pointer;
     
 
-    @media screen and (min-with: 1024px) {
-        margin: 0 65rem 0 2rem;
-        font-size: 21px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.28px;
-        color: #ffffff;
-        text-decoration: none;
-        cursor: pointer;
-    }
+  @media screen and (min-with: 1024px) {
+    margin-left: 30px;
+    font-size: 1.5rem;
+  }
 
 `
 

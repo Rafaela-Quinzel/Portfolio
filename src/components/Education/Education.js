@@ -11,10 +11,10 @@ function Education() {
 
             <S.InfoContainer>
                 <S.CourseContainer
-                    // ata-aos="fade-zoom-in" data-aos-duration="1500"
-                    // data-aos="fade-right"
-                    // data-aos-offset="300"
-                    // data-aos-easing="ease-in-sine"
+                    ata-aos="fade-zoom-in" data-aos-duration="1500"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
                 >
                     <S.Subtitle>Curso Web Full Stack</S.Subtitle>
                     <S.Intitution>
@@ -32,10 +32,10 @@ function Education() {
                     &nbsp;&nbsp;São mais de 1000 horas de programação que faz com que suas alunas e alunos sejam profissionais com conhecimentos adquiridos e postos em prática tanto no Back-end quanto no Front-end.</S.Description>
                 </S.CourseContainer>
                 <S.CourseContainer
-                    // ata-aos="fade-zoom-in" data-aos-duration="1500"
-                    // data-aos="fade-left"
-                    // data-aos-offset="300"
-                    // data-aos-easing="ease-in-sine"
+                    ata-aos="fade-zoom-in" data-aos-duration="1500"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
                 >
                     <S.Subtitle>Curso Web Design</S.Subtitle>
                     <S.Intitution>

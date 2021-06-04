@@ -8,6 +8,10 @@ export const MainContainer = styled.div`
 
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 600px) {
+        height: 8vh;
+    }
 `
 
 export const Text = styled.p`

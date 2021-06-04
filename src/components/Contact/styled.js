@@ -11,9 +11,13 @@ export const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    /* @media(max-width: 800px) {
-       width: 362%;
-    } */
+    @media screen and (min-width: 780px) {
+      height: 65vh;
+    }
+
+    @media screen and (min-width: 1080px) {
+      height: 70vh;
+    }
 `
 
 export const TitleContainer = styled.h1`
@@ -26,6 +30,10 @@ export const TitleContainer = styled.h1`
     letter-spacing: -0.25px;
     text-align: center;
     color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+        margin: 5% auto 5% auto;
+    }
 `
 
 export const TextContainer = styled.div`
@@ -38,8 +46,17 @@ export const TextContainer = styled.div`
     letter-spacing: -0.24px;
     text-align: center;
     color: #ffffff;
-    margin: 2% auto 51px 4%;
+    margin: 2% auto 51px auto;
     text-align: center;
+
+    @media screen and (min-width: 1024px) {
+        width: 70%;
+        margin: 0 auto 51px auto;
+    }
+
+    @media screen and (min-width: 1080px) {
+      width: 50%;
+    }
 `
 
 export const Text = styled.p`
@@ -76,7 +93,9 @@ export const SocialContainer = styled.div`
        margin: 10px auto 5% auto;
     }
 
-
+    @media screen and (min-width: 1024px) {
+        width: 40%;
+    }
 `
 
 export const SocialIcons = styled.img`
@@ -87,12 +106,9 @@ export const SocialIcons = styled.img`
     }
 
     @media screen and (min-width: 1024px) {
-     cursor: pointer;
+      cursor: pointer;
     }
 `
 
 export const SocialLink = styled.a`
-    /* @media(max-width: 800px) {
-        margin: 20px auto 5px 20px;
-    } */
 `

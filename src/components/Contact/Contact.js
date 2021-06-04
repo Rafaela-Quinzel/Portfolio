@@ -9,7 +9,7 @@ import email from "../../assets/email.svg"
 function Contact() {
 
     return (
-        <S.MainContainer>
+        <S.MainContainer className="contact">
             <S.TitleContainer>Contrate-me!</S.TitleContainer>
 
             <S.TextContainer>
@@ -55,7 +55,7 @@ function Contact() {
                     />
                 </S.SocialLink>
             </S.SocialContainer>
-            
+
         </S.MainContainer>
     )
 }

@@ -58,7 +58,7 @@ export const TextContainer = styled.div`
     width: 95%;
     height: 75%;
     margin: 5% 0 10% 0;
-    text-align: center;
+    text-align: justify;
 
     @media screen and (min-width: 600px){
         width: 90%;

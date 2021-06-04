@@ -57,6 +57,7 @@ export default function Navbar() {
                             to="about-me"
                             smooth={true}
                             duration={1500}
+                            onClick={closeMenu}
                         >
                             Sobre mim
                         </S.Anchor>
@@ -64,6 +65,7 @@ export default function Navbar() {
                             to="my-projects"
                             smooth={true}
                             duration={1500}
+                            onClick={closeMenu}
                         >
                             Projetos
                         </S.Anchor>
@@ -71,6 +73,7 @@ export default function Navbar() {
                             to="contact"
                             smooth={true}
                             duration={1500}
+                            onClick={closeMenu}
                         >
                             Contato
                         </S.Anchor>

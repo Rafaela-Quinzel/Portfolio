@@ -32,11 +32,12 @@ export const Wrapper = styled.div`
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
-   z-index: 1;
+   z-index: 2147483647;
    width: 100%;
-   height: 30vh;
-   margin: 250px 0 0 0;
-   position: absolute;
+   height: 40vh;
+   margin: 315px 0 0 0;
+   padding-bottom: 5%;
+   position: fixed;
    background-color:rgb(17, 16, 16);
 
   @media sreen and (min-width: 1024px) {

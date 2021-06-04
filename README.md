@@ -31,8 +31,7 @@ Meu portfólio de Desenvolvedora Web 👩‍💻
    <a href="https://styled-components.com/docs/advanced">
       <img src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" alt="Dayjs" width="45" height="55" style="margin: 5px 5px 0 10px"/>
    </a>
-   
-      <a href="https://michalsnik.github.io/aos/">
+   <a href="https://michalsnik.github.io/aos/">
       <img src="https://www.bypeople.com/wp-content/uploads/2017/03/css-animate-scroll.jpg"  alt="AOS" width="45" height="55" style="margin: 5px 5px 0 10px"/>
    </a>
 </div>

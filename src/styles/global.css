@@ -25,6 +25,9 @@
 
 body {
     font: 400 1rem "Inter", sans-serif;
+    @apply bg-gray-900 text-gray-100 antialiased;
+    background-color: #0b0b0f; /* tom escuro dos prints */
+    color: #e5e7eb;
 }
 
 button:focus {
@@ -44,6 +47,16 @@ button:focus {
     .carousel {
         margin-left: 0;
     }
+}
+
+/* Dark theme base */
+:root {
+    color-scheme: dark;
+}
+
+html, body, #root {
+    height: 100%;
+    overflow-x: hidden;
 }
 
 /* @media screen and (min-width: 1024px) {

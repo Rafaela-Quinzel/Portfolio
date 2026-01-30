@@ -1,16 +1,15 @@
-import MainPage from './pages/MainPage/MainPage'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './styles/global.css'
 import React from 'react'
+import { AppRouterProvider } from 'routes/router'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function App(): JSX.Element {
-  React.useEffect(() => {
-    AOS.init()
-  }, [])
-
+  const queryClient = new QueryClient()
   return (
-    <MainPage />
+    <QueryClientProvider client={queryClient}>
+      <AppRouterProvider />
+    </QueryClientProvider>
   )
 }
 export default App

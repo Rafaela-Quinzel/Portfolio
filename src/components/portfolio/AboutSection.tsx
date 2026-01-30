@@ -45,10 +45,10 @@ export default function AboutSection() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 mt-10">
+              {/* <div className="grid grid-cols-3 gap-6 mt-10">
                 {[
                   { value: '4', label: 'Anos de Exp.' },
-                  { value: '40+', label: 'Projetos' },
+                  { value: '20+', label: 'Projetos' },
                   { value: '5+', label: 'Empresas' },
                 ].map((stat, index) => (
                   <motion.div
@@ -65,7 +65,7 @@ export default function AboutSection() {
                     <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
                   </motion.div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             {/* Right side - Skills */}

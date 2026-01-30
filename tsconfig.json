@@ -16,5 +16,16 @@
     "isolatedModules": true,
     "baseUrl": "src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/components/AboutMe",
+    "src/components/Contact",
+    "src/components/Education",
+    "src/components/Footer",
+    "src/components/Knowledge",
+    "src/components/NavBar",
+    "src/components/Presentation",
+    "src/components/Projects",
+    
+  ]
 }

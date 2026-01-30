@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 import { Badge } from 'components/ui/badge';
-import { useQuery } from '@tanstack/react-query';
-import { getUserProjects } from 'services/github';
+import { projects as mockProjects } from 'data/projects';
 import { Carousel } from 'components/ui/carousel';
 
 const categories = [
@@ -27,20 +26,33 @@ type Project = {
   updatedAt?: string;
 };
 
-export default function ProjectsSection({ projects = [], githubUser }: { projects?: Project[]; githubUser?: string }) {
+type DisplayProject = Project;
+export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState('all');
+  const normalizeUrl = (url?: string): string | undefined => {
+    if (!url) return undefined;
+    const u = url.trim();
+    if (u.startsWith('#')) return u;
+    if (/^https?:\/\//i.test(u)) return u;
+    if (u.startsWith('www.')) return `https://${u}`;
+    return `https://${u}`;
+  };
+  const validLiveUrl = (url?: string): string | undefined => {
+    if (!url) return undefined;
+    const u = url.trim();
+    if (!u || u === '#') return undefined;
+    if (/^(https?:\/\/|www\.)/i.test(u) || u.startsWith('/')) return normalizeUrl(u);
+    return undefined;
+  };
+  const buildTechSearchUrl = (tech: string): string =>
+    `https://github.com/search?q=${encodeURIComponent(tech)}&type=repositories`;
+  const sourceProjects: DisplayProject[] = mockProjects as DisplayProject[];
 
-  const { data: fetchedProjects, isLoading, isError } = useQuery({
-    queryKey: ['github-projects', githubUser],
-    queryFn: () => getUserProjects(githubUser as string),
-    enabled: !!githubUser,
-  });
-
-  const sourceProjects = githubUser && !isError && fetchedProjects ? fetchedProjects : projects;
-
-  const filteredProjects = activeCategory === 'all'
+  const filteredProjects: DisplayProject[] = activeCategory === 'all'
     ? sourceProjects
-    : sourceProjects.filter(p => p.category === activeCategory);
+    : sourceProjects.filter((p: DisplayProject) => p.category === activeCategory);
+
+  const categoryEmpty = filteredProjects.length === 0;
 
   return (
     <section id="projects" className="py-32 relative bg-brand-surface overflow-hidden">
@@ -91,21 +103,10 @@ export default function ProjectsSection({ projects = [], githubUser }: { project
         </motion.div>
 
         {/* Loading / Error States */}
-        {isLoading && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-10">
-            <p className="text-gray-500">Carregando projetos do GitHub...</p>
-          </motion.div>
-        )}
-
-        {isError && githubUser && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-6">
-            <p className="text-gray-500">Não foi possível carregar os projetos do GitHub. Mostrando lista padrão.</p>
-          </motion.div>
-        )}
 
         {/* Projects Carousel */}
         <Carousel key={activeCategory} className="mt-2">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project: DisplayProject, index: number) => (
             <motion.div
               key={project.id}
               layout
@@ -126,7 +127,7 @@ export default function ProjectsSection({ projects = [], githubUser }: { project
               </div>
 
               {/* Content */}
-              <div className="p-6 flex flex-col">
+              <div className="p-6 flex flex-col relative z-10">
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                     {project.title}
@@ -147,13 +148,18 @@ export default function ProjectsSection({ projects = [], githubUser }: { project
 
                 {/* Technologies / Stars */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies?.slice(0, 8).map((tech) => (
-                    <span
+                  {project.technologies?.slice(0, 8).map((tech: string) => (
+                    <a
                       key={tech}
-                      className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20"
+                      href={buildTechSearchUrl(tech)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs px-2 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:underline cursor-pointer pointer-events-auto transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40"
+                      aria-label={`Pesquisar por ${tech} no GitHub`}
+                      title={`Pesquisar por ${tech} no GitHub`}
                     >
                       {tech}
-                    </span>
+                    </a>
                   ))}
                   {(project as any).stars !== undefined && (
                     <span className="text-xs px-2 py-1 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">
@@ -166,30 +172,34 @@ export default function ProjectsSection({ projects = [], githubUser }: { project
                   {project.updatedAt && (
                     <span>Atualizado: {new Date(project.updatedAt).toLocaleDateString()}</span>
                   )}
-                  {project.live_url && (
+                  {validLiveUrl(project.live_url) && (
                     <span className="text-green-400">Tem Demo</span>
                   )}
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-3 mt-auto">
-                  {project.live_url && (
+                <div className="flex gap-3 mt-auto z-30 relative">
+                  {validLiveUrl(project.live_url) && (
                     <a
-                      href={project.live_url}
+                      href={validLiveUrl(project.live_url)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition-colors"
+                      className="flex items-center gap-1 text-sm text-gray-400 hover:text-white hover:underline cursor-pointer pointer-events-auto transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 rounded"
+                      aria-label={`Abrir demo de ${project.title}`}
+                      title={`Abrir demo de ${project.title}`}
                     >
                       <ExternalLink className="w-4 h-4" />
                       Demo
                     </a>
                   )}
-                  {project.github_url && (
+                  {normalizeUrl(project.github_url) && (
                     <a
-                      href={project.github_url}
+                      href={normalizeUrl(project.github_url)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition-colors"
+                      className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white hover:underline cursor-pointer pointer-events-auto transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 rounded z-50"
+                      aria-label={`Abrir código de ${project.title}`}
+                      title={`Abrir código de ${project.title}`}
                     >
                       <Github className="w-4 h-4" />
                       Código
@@ -207,8 +217,7 @@ export default function ProjectsSection({ projects = [], githubUser }: { project
             </motion.div>
           ))}
         </Carousel>
-
-        {filteredProjects.length === 0 && (
+        {categoryEmpty && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

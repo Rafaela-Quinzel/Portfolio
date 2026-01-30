@@ -132,16 +132,22 @@ export function mapReposToProjects(repos: GitHubRepo[], techMap: Record<string, 
 }
 
 export async function getUserProjects(username: string): Promise<ProjectCardData[]> {
-  const repos = await getUserRepos(username)
-  const owner = username
-  const limited = repos.slice(0, 24)
-  const techMap: Record<string, string[]> = {}
-  await Promise.all(limited.map(async (r) => {
-    const [languages, topics] = await Promise.all([
-      getRepoLanguages(owner, r.name),
-      getRepoTopics(owner, r.name),
-    ])
-    techMap[r.name] = [...languages, ...topics]
-  }))
-  return mapReposToProjects(limited, techMap)
+  // Simple cache in localStorage to avoid rate limit issues
+  const cacheKey = `gh_projects_${username}`
+  const cachedRaw = typeof window !== 'undefined' ? window.localStorage.getItem(cacheKey) : null
+  const cached: ProjectCardData[] | null = cachedRaw ? JSON.parse(cachedRaw) : null
+
+  try {
+    const repos = await getUserRepos(username)
+    const limited = repos.slice(0, 24)
+    const projects = mapReposToProjects(limited, {}) // tecnologias virão do campo language
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(cacheKey, JSON.stringify(projects))
+    }
+    return projects
+  } catch (e) {
+    // On failure, serve cached data if present
+    if (cached) return cached
+    return []
+  }
 }

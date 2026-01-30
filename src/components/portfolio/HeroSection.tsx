@@ -117,16 +117,25 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 0.6 }}
-                aria-label="Email"
-                title="Email"
-                className="p-3 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-300"
+                aria-label="Ir para projetos"
+                title="Ir para projetos"
+                role="button"
+                tabIndex={0}
+                onClick={scrollToProjects}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        scrollToProjects();
+                    }
+                }}
+                className="absolute bottom-16 left-1/2 -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer z-10 focus:outline-none"
             >
                 <motion.div
                     animate={{ y: [0, 8, 0] }}
                     transition={{ repeat: Infinity, duration: 2 }}
                     className="text-gray-500"
                 >
-                    <ArrowDown className="w-5 h-5" />
+                    <ArrowDown className="w-6 h-6" />
                 </motion.div>
             </motion.div>
         </section>

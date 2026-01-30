@@ -66,7 +66,7 @@ export function Carousel({ className, children, showDots = true }: CarouselProps
       >
         {/* Each child should define its own min-width to snap */}
         {React.Children.map(children, (child) => (
-          <div className="snap-center">
+          <div className="snap-center pointer-events-auto">
             {child}
           </div>
         ))}
@@ -74,12 +74,12 @@ export function Carousel({ className, children, showDots = true }: CarouselProps
 
       {/* Controls */}
       {pages > 1 && (
-        <div className="pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-between px-2 z-10">
           <button
             type="button"
             aria-label="Anterior"
             onClick={() => scrollByPage(-1)}
-            className="pointer-events-auto absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/10"
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/10 focus:outline-none focus:ring-2 focus:ring-blue-500/40 z-20"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -87,7 +87,7 @@ export function Carousel({ className, children, showDots = true }: CarouselProps
             type="button"
             aria-label="Próximo"
             onClick={() => scrollByPage(1)}
-            className="pointer-events-auto absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/10"
+            className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/10 focus:outline-none focus:ring-2 focus:ring-blue-500/40 z-20"
           >
             <ChevronRight className="w-5 h-5" />
           </button>

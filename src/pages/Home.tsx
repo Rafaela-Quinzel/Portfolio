@@ -3,7 +3,7 @@ import HeroSection from 'components/portfolio/HeroSection';
 import AboutSection from 'components/portfolio/AboutSection';
 import ProjectsSection from 'components/portfolio/ProjectsSection';
 import Footer from 'components/portfolio/Footer';
-import { projects } from 'data/projects';
+// Removido fallback estático dos projetos
 
 export default function Home() {
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <ProjectsSection projects={projects} githubUser="Rafaela-Quinzel" />
+      <ProjectsSection />
       <Footer />
     </div>
   );
